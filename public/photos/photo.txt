@@ -1,0 +1,24 @@
+    const photo = [
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+            { title: '', src: '/', link: '/'},
+      ];
+
+export default photo
