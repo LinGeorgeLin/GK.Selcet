@@ -2,10 +2,17 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
+  const pathname = usePathname();
   const Type = () => setSidebar(!sidebar);
+
+  // 监听路由变化，自动关闭菜单
+  useEffect(() => {
+    setSidebar(false);
+  }, [pathname]);
 
   useEffect(() => {
     const overflowValue = sidebar ? 'hidden' : '';
