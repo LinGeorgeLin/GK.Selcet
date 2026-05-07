@@ -24,6 +24,9 @@ const jaldi = Jaldi({
 export const metadata = {
   title: 'G.K Select',
   description: 'G.K Select - Fashion Store',
+  icons: {
+    icon: '/photos/G.K-Logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {
