@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import photo from '../../photos/photo';
+import photo from '../../public/photos/photo';
 
 export const metadata = { title: 'Men | G.K Select' };
 

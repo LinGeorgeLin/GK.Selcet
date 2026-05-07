@@ -1,11 +1,23 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const Type = () => setSidebar(!sidebar);
+
+  useEffect(() => {
+    const overflowValue = sidebar ? 'hidden' : '';
+
+    document.body.style.overflow = overflowValue;
+    document.documentElement.style.overflow = overflowValue;
+
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [sidebar]);
 
   return (
     <>
