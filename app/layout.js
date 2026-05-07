@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from '../components/Navbar';
 import Copyright from '../components/Copyright';
 import { Blinker, Inria_Sans, Jaldi } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/next";
 
 const blinker = Blinker({
   subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
+        <Analytics/>
       </head>
       <body className={`${blinker.variable} ${inriaSans.variable} ${jaldi.variable}`}>
         <Navbar />
